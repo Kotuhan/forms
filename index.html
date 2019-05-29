@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Вхід до системи</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Дані користувача</h1>
+
+      <form action="receive_form.html" method="GET">
+        <div class="form-group">
+          <label for="nameInput">Nickname</label>
+          <input
+            class="form-control"
+            id="nameInput"
+            aria-describedby="emailHelp"
+            placeholder="Name"
+            name="nickname"
+            required
+            maxlength="10"
+          />
+        </div>
+        <div class="form-group">
+          <label for="passwordInput">Password</label>
+          <input
+            class="form-control"
+            id="passwordInput"
+            placeholder="Password"
+            name="password"
+            type="password"
+            required
+          />
+        </div>
+        <div class="form-check">
+          <input
+            name="shouldRemember"
+            type="checkbox"
+            class="form-check-input"
+            id="rememberMe"
+          />
+          <label class="form-check-label" for="rememberMe">Remember me</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary submit-button">
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
